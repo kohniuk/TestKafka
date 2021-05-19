@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaConsumer", "KafkaConsumer\KafkaConsumer\KafkaConsumer.csproj", "{325D291F-0837-4E4B-B99A-284D99041617}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaProducer", "KafkaProducer\KafkaProducer\KafkaProducer.csproj", "{C9FDF36A-A4E6-466D-98FE-0458985A2478}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus", "EventBus\EventBus\EventBus.csproj", "{CD332ADC-C40E-439E-B064-77691B4CA10D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Kafka", "EventBus.Kafka\EventBus.Kafka\EventBus.Kafka.csproj", "{E8B79078-A592-4168-8935-34E5EE2D44DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{6969DA63-A5FB-4571-8B3A-AC7AD1B973A1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\Projects\docker\files\docker-compose.yml = ..\..\..\..\..\Projects\docker\files\docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{325D291F-0837-4E4B-B99A-284D99041617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{325D291F-0837-4E4B-B99A-284D99041617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{325D291F-0837-4E4B-B99A-284D99041617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{325D291F-0837-4E4B-B99A-284D99041617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9FDF36A-A4E6-466D-98FE-0458985A2478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9FDF36A-A4E6-466D-98FE-0458985A2478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9FDF36A-A4E6-466D-98FE-0458985A2478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9FDF36A-A4E6-466D-98FE-0458985A2478}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD332ADC-C40E-439E-B064-77691B4CA10D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD332ADC-C40E-439E-B064-77691B4CA10D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD332ADC-C40E-439E-B064-77691B4CA10D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD332ADC-C40E-439E-B064-77691B4CA10D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8B79078-A592-4168-8935-34E5EE2D44DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B79078-A592-4168-8935-34E5EE2D44DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B79078-A592-4168-8935-34E5EE2D44DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B79078-A592-4168-8935-34E5EE2D44DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88F9B044-00AA-4690-BE4A-5671C8F619E4}
+	EndGlobalSection
+EndGlobal
