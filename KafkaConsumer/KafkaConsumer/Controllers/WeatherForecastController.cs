@@ -3,7 +3,6 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace KafkaConsumer.Controllers
 {
@@ -17,8 +16,9 @@ namespace KafkaConsumer.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        
+        public WeatherForecastController(
+            ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
         }

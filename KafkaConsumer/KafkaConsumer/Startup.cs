@@ -1,8 +1,8 @@
+using DataAccess.LiteDB;
 using EventBus;
 using EventBus.Abstractions;
 using EventBus.Kafka;
 using KafkaConsumer.Handlers;
-using KafkaConsumer.Servises;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -26,9 +26,6 @@ namespace KafkaConsumer
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IHostedService, KafkaConsumerHandler>();
-            services.AddControllers();
-
             services.AddSingleton<IKafkaPersistentConnection>(sp =>
             {
                 var logger = sp.GetRequiredService<ILogger<DefaultKafkaPersistentConnection>>();
@@ -54,6 +51,8 @@ namespace KafkaConsumer
             services.AddSingleton<IEventBusSubscriptionsManager, InMemoryEventBusSubscriptionsManager>();
             services.AddTransient<ChangedStockIntegrationEventHandler>();
             services.AddTransient<IStockService, StockService>();
+            services.AddSingleton<IHostedService, KafkaConsumerHandler>();
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

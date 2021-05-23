@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace KafkaConsumer.Models
+namespace DataAccess.LiteDB
 {
     public class Stock
     {

@@ -1,6 +1,5 @@
-﻿using EventBus.Abstractions;
-using KafkaConsumer.Models;
-using KafkaConsumer.Servises;
+﻿using DataAccess.LiteDB;
+using EventBus.Abstractions;
 using Newtonsoft.Json;
 using System;
 using System.Threading.Tasks;

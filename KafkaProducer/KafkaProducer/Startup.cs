@@ -1,3 +1,4 @@
+using DataAccess.LiteDB;
 using EventBus;
 using EventBus.Abstractions;
 using EventBus.Kafka;
@@ -53,6 +54,7 @@ namespace KafkaProducer
 
             services.AddScoped<IChangedStockIntegrationEventService, ChangedStockIntegrationEventService>();
             services.AddSingleton<IEventBusSubscriptionsManager, InMemoryEventBusSubscriptionsManager>();
+            services.AddTransient<IStockService, StockService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
